@@ -9,6 +9,9 @@ volumes:
 
 **Red propia interna para todos los contenedores**
 
+networks:
+       br02:
+
 **ip fija en el servidor**
 
 **Configurar Forwarders**
