@@ -19,6 +19,11 @@ networks:
         ipv4_address: 10.1.0.254
 
 **Configurar Forwarders**
+En el fichero named.conf.option porner en la parte de fordwarders lo siguiente
+
+ forwarders {
+ 	8.8.4.4;
+	 };
 
 **Crear Zona propia**
     
