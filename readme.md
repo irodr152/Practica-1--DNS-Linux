@@ -30,3 +30,19 @@ En el fichero named.conf.option porner en la parte de fordwarders lo siguiente
 **Registros a configurar: NS, A, CNAME, TXT, SOA**
     
 **Cliente con herramientas de red**
+Para instalar las herramientas de red, ejecutamos el siguiente comando:
+
+sudo apt-get install -y net-tools
+
+Para hacer la imgen del server dns con las tools de red, ponemos en la consola(fuera de la imagen), el siguiente comando:
+
+docker commit -m "imagen dns net tools" asind_bind9vv dns_net
+
+Si quisieramos crear un contenedor con esa imagen, en el docker-compose añadiriamos lo siguiente
+
+asir_cliente:
+    image: dns_net
+    networks: 
+      - br02 
+    dns:
+      - 10.1.0.254
