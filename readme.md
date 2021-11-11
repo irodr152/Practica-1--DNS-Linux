@@ -14,6 +14,10 @@ networks:
 
 **ip fija en el servidor**
 
+networks:
+       br02:
+        ipv4_address: 10.1.0.254
+
 **Configurar Forwarders**
 
 **Crear Zona propia**
